@@ -1,0 +1,31 @@
+extends layout
+
+include _includes/sharedHTMLfunctions
+
+block content
+  bod
+  .container
+    .row
+      .col-lg-3.col-md-2
+      .col-lg-6.col-md-8.login-box
+        .col-lg-12.login-key
+          i.fa.fa-key(aria-hidden='true')
+        .col-lg-12.login-title
+          | TeamInfo4U
+        .col-lg-12.login-form
+          .col-lg-12.login-form
+            form
+              .form-group
+                label.form-control-label USERNAME
+                input.form-control(type='text')
+              .form-group
+                label.form-control-label PASSWORD
+                input.form-control(type='password' i='')
+              .col-lg-12.loginbttm
+                .col-lg-6.login-btm.login-text
+                  // Error Message
+                .col-lg-6.login-btm.login-button
+                  a.nav-link(href='/teamInfo/') LOGIN
+                .col-lg-6.login-btm.register-button
+                  a.nav-link(href='/register/') Don't have an account? Register here
+        .col-lg-3.col-md-2

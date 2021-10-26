@@ -1,0 +1,29 @@
+extends layout
+
+include _includes/sharedHTMLfunctions
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+        small &nbsp;#{pageHeader.strapline}
+  .row
+    .col-12.col-md-8
+
+      each team in teams 
+        .card
+          .card-block
+            h1
+              p.name= team.name
+            h1
+            h4
+            p.manager= team.manager
+            p.founded= team.founded
+            p.nickname= team.nickname
+            p.topScorer= team.topScorer
+            p.stadium= team.stadium 
+            p.website= team.website
+            p.leagues= team.leagues
+            h4      
+    .col-12.col-md-4
+      p.lead= sidebar
