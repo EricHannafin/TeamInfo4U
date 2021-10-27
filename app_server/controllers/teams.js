@@ -13,7 +13,7 @@ const teamInfo = function(req, res){
   res.render('teamInfo-page', {
     title: 'TeamInfor4U',
     pageHeader: {
-      title: 'Loc8r',
+      title: 'TeamInfo4U',
       strapline: 'A bit of information about your favourite team'
     },
     sidebar: "Looking for a bit more information about premier league teams? TeamInfo4U will show you the current manager, nickname, top scorer, stadium, website and premier league titles for all premier league clubs",
