@@ -35,3 +35,37 @@ const teamSchema = new mongoose.Schema({
 		'default': 0
 	},
 });
+
+const loginSchema = new mongoose.Schema({ 
+	name: { 
+		type: String,
+		required: true
+	},
+
+	password: { 
+		type: String,
+		required: true
+	},
+});
+
+const registrationSchema = new mongoose.Schema({ 
+	name: { 
+		type: String,
+		required: true
+	},
+
+	username: { 
+		type: String,
+		required: true
+	},
+
+	password: { 
+		type: String,
+		required: true
+	},
+
+	email: { 
+		type: String,
+		required: true
+	},
+});
