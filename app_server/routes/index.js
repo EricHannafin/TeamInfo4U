@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 const ctrlTeams = require("../controllers/teams");
 const ctrlOthers = require("../controllers/others");
