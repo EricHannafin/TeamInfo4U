@@ -69,3 +69,5 @@ const registrationSchema = new mongoose.Schema({
 		required: true
 	},
 });
+
+mongoose.model('Team', teamSchema);
