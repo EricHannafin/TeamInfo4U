@@ -1,9 +1,11 @@
 extends layout
-
 block content
+
   .row.banner
     .col-12
-      h1= title
-  .row
-    .col-12.col-lg-8
-      p !{(content).replace(/\n/g, '<br/>')}
+      app-about Loading
+
+  block scripts
+  script(src='/build/runtime.e621b55de5329517.js')
+  script(src='/build/polyfills.fa5c375ca049b303.js')
+  script(src='/build/main.9e771d392c75efd0.js')
